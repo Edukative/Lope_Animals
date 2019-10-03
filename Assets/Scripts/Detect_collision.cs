@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flyforward : MonoBehaviour
+public class Detect_collision : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,11 @@ public class Flyforward : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        Destroy(other.gameObject);
     }
 }
