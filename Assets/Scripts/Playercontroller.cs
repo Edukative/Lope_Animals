@@ -6,8 +6,10 @@ public class Playercontroller : MonoBehaviour
 {
     public float speed;
     private float horizontalInput;
-    private float xRange = 10.0f;
+    private float xRange = 20.0f;
     public GameObject projectile;
+
+    public int health; //Player's health
     // Start is called before the first frame update
     void Start()
     {

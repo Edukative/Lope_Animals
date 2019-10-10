@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7609641984199851685}
   - component: {fileID: 8789625009861788536}
   - component: {fileID: -1131653746915334339}
+  - component: {fileID: -3806015110417173727}
   m_Layer: 0
   m_Name: Animal_Fox_02
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137863347581268729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -15, y: 0, z: 13}
   m_LocalScale: {x: 16.995438, y: 16.995438, z: 16.995438}
   m_Children:
@@ -45,7 +46,7 @@ Transform:
   - {fileID: 2137863347581724367}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2137863347574106701
 Animator:
   serializedVersion: 3
@@ -77,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83228398ef05ac47b7bfdfecb1720d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 15
 --- !u!65 &8789625009861788536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -103,6 +104,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf7939862f404943a5d20626f517366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &-3806015110417173727
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137863347581268729}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2137863347581268825
 GameObject:
   m_ObjectHideFlags: 0
