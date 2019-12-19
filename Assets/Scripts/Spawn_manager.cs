@@ -8,8 +8,8 @@ public class Spawn_manager : MonoBehaviour
     public int animalIndex;
 
     //Spawn values
-    private float spawnRangeX = 20;
-    private float spawnPosZ = 20;
+    private float spawnRangeX = 15;
+    private float spawnPosZ = 15;
 
     //invoke values
     private float startDelay = 2.0f;

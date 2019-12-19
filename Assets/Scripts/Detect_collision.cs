@@ -18,16 +18,18 @@ public class Detect_collision : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        Destroy(gameObject);
-        if(other.tag != "Player")
+    {      
+        if(other.tag == "Player" && this.tag == "Animal")
+        {
+            Playercontroller player = other.GetComponent<Playercontroller>();
+            player.LoseHP();
+            Debug.Log(player.health);
+            Destroy(gameObject);
+        }
+        else if (this.tag != "Projectile")
         {
             Destroy(other.gameObject);
-        }
-        else
-        {
-            player.health--;
-            Debug.Log(player.health);
+            Destroy(gameObject);
         }
         
     }
